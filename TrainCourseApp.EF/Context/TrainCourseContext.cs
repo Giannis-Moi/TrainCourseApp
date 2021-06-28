@@ -32,6 +32,7 @@ namespace TrainCourseApp.EF.Context {
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
 
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
+            modelBuilder.ApplyConfiguration(new CourseConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }
