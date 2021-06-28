@@ -17,7 +17,8 @@ namespace TrainCourseApp.EF.Configuration {
             builder.Property(Student => Student.Id).ValueGeneratedOnAdd();
             builder.Property(Student => Student.Name).HasMaxLength(100).IsRequired(true);
             builder.Property(Student => Student.Surname).HasMaxLength(100).IsRequired(true);
-            builder.Property(Student => Student.Address).HasMaxLength(100);
+            builder.Property(Student => Student.Birthdate).IsRequired(true);
+            builder.Property(Student => Student.Address).HasMaxLength(100).IsRequired(true); 
 
 
 
