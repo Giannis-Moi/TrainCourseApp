@@ -16,7 +16,7 @@ namespace TrainCourseApp.EF.Configuration {
             builder.Property(Course => Course.Id).ValueGeneratedOnAdd();
             builder.Property(Course => Course.Title).HasMaxLength(100).IsRequired(true);
             builder.Property(Course => Course.Category).HasMaxLength(100).IsRequired(true);
-
+            builder.Property(Course => Course.Date).IsRequired(true);
         }
     }
 }
